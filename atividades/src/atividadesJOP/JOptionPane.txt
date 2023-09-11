@@ -1,0 +1,222 @@
+JOptionPane
+
+Atividade 1
+
+package atividadesJOP;
+import javax.swing.JOptionPane;
+public class Atividade1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	String nota1Str = JOptionPane.showInputDialog("Digite a primeira nota: ");
+	String nota2Str = JOptionPane.showInputDialog("Digite a segunda nota: ");
+	String nota3Str = JOptionPane.showInputDialog("Digite a terceira nota: ");
+	
+	double nota1=Double.parseDouble(nota1Str);
+	double nota2=Double.parseDouble(nota2Str);
+	double nota3=Double.parseDouble(nota3Str);
+	
+	double media=(nota1+nota2+nota3)/3;
+	
+	JOptionPane.showMessageDialog(null, "Essa é média das notas: " +media);
+}
+}
+
+Atividade 2
+
+package atividadesJOP;
+import javax.swing.JOptionPane;
+public class Atividade2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String niverStr= JOptionPane.showInputDialog("Digite o ano em que você nasceu: ");
+		String anoatualStr= JOptionPane.showInputDialog("Digite o ano em que estamos: ");
+		double niver=Double.parseDouble(niverStr);
+		double anoatual=Double.parseDouble(anoatualStr);
+		double idade = (anoatual-niver);
+		double ano2050=2050;
+		JOptionPane.showMessageDialog(null, "Essa é a sua idade: " +idade);
+		JOptionPane.showMessageDialog(null, "Essa é a sua idade em 2050: " +(ano2050 - anoatual + idade));
+	}
+
+}
+
+
+Atividade 3
+
+package atividadesJOP;
+import javax.swing.JOptionPane;
+public class Atividade3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String dolarStr = JOptionPane.showInputDialog("Digite sua quantia em dólar: ");
+		double dolar=  Double.parseDouble(dolarStr);
+		double dolar$ = 4.99;
+		double reais= dolar*dolar$;
+		JOptionPane.showMessageDialog(null, "Essa é sua quantia em R$; "+reais);
+	} 
+
+}
+
+
+Atividade 4
+
+package atividadesJOP;
+import javax.swing.JOptionPane;
+public class Atividade4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String salarioStr = JOptionPane.showInputDialog("Digite o salario do funcionario: R$ ");
+		double salario = Double.parseDouble(salarioStr);
+		double percent = 0.25;
+		double aumento = salario * percent;
+		double nsalario = salario + aumento;
+		JOptionPane.showMessageDialog(null,"Esse é o seu novo salario do funcionario: R$ " + nsalario);
+	}
+
+}
+
+
+Atividade 5
+
+package atividadesJOP;
+import javax.swing.JOptionPane;
+public class Atividade5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String baseStr = JOptionPane.showInputDialog("Digite a base do losango: ");
+String alturaStr = JOptionPane.showInputDialog("Digite a altura do losango: ");
+double base = Double.parseDouble(baseStr);
+double altura = Double.parseDouble(alturaStr);
+double area = base*altura/2;
+
+JOptionPane.showMessageDialog(null, "Essa é a área do losango: "+area);
+
+	}
+
+}
+
+
+Atividade 6
+
+
+package atividadesJOP;
+import javax.swing.JOptionPane;
+public class Atividade6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String celsiusStr = JOptionPane.showInputDialog("Digite um valor em C°: ");
+double celsius = Double.parseDouble(celsiusStr);
+double faren = celsius*1.8+32;
+JOptionPane.showMessageDialog(null, "Esse é o valor em F°: " +faren);
+	}
+
+}
+
+
+
+Atividade 7
+
+package atividadesJOP;
+import javax.swing.JOptionPane;
+public class Atividade7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String salFunStr = JOptionPane.showInputDialog("Digite o valor do salário do funcionário: ");
+double salFun = Double.parseDouble(salFunStr);
+double salMin = 1320;
+double qntSalMin = salFun/salMin;
+JOptionPane.showInternalMessageDialog(null, "O funcionário recebe " + qntSalMin + " salários mínimos.");
+	}
+
+}
+
+Atividade 8
+
+package atividadesJOP;
+import javax.swing.JOptionPane;
+public class Atividade8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Essa eu vou fazer diferente da Scanner pq meu mano do grupo me deu uma ideia boa :D
+String pesoStr = JOptionPane.showInputDialog("Informe seu peso em Kg: ");
+double peso = Double.parseDouble(pesoStr);
+double peso15 = peso * 1.15;
+double peso20 = peso*0.80;
+JOptionPane.showMessageDialog(null, ("Seu peso com mais 15% Kg: "+peso15));
+JOptionPane.showMessageDialog(null, ("Seu peso com menos 20% Kg: "+peso20));
+	}
+
+}
+
+
+Atividade 9
+
+package atividadesJOP;
+import javax.swing.JOptionPane;
+public class Atividade9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String cateAStr = JOptionPane.showInputDialog(null, "Digite o cateto (a): ");
+String cateBStr = JOptionPane.showInputDialog(null, "Digite o cateto (b): ");
+double cateA=Double.parseDouble(cateAStr);
+double cateB=Double.parseDouble(cateBStr);
+double hip = Math.sqrt(Math.pow(cateA, 2) + Math.pow(cateB, 2));
+JOptionPane.showMessageDialog(null, "Esse é o valor da hipotenusa: "+hip);
+	}
+
+}
+
+
+Atividade 10 
+
+package atividadesJOP;
+import javax.swing.JOptionPane;
+public class Atividade10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String raioStr = JOptionPane.showInputDialog("Digite o raio do círculo:");
+double raio = Double.parseDouble(raioStr);
+double comprimento = 2 * Math.PI * raio; 
+double area = Math.PI*Math.pow(raio,2);
+double volume = (3.0/4.0)*Math.PI*Math.pow(raio, 3);
+JOptionPane.showMessageDialog(null, "Esse é o comprimento do círculo: "+comprimento);
+JOptionPane.showMessageDialog(null,"Essa é a área do círculo: "+area);
+JOptionPane.showMessageDialog(null,"Esse é o volume  do círculo: "+volume);
+	}
+
+}
+
+
+Atividade 11
+
+package atividadesJOP;
+import javax.swing.JOptionPane;
+public class Atividade11 {
+//Essa foi chat gpt puro, n faço ideia de como faz
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String valorStr = JOptionPane.showInputDialog("Digite a tabuada desejada: ");
+		int valor = Integer.parseInt(valorStr);
+		StringBuilder tabuada = new StringBuilder("Tabuada de multiplicação para " + valor + ":\n");	
+		for (int i=0; i <=10; i++){
+			int resultado = valor * i;
+			tabuada.append(valor).append(" x ").append(i).append(" = ").append(resultado).append("\n");
+			
+			}
+		 JOptionPane.showMessageDialog(null, tabuada.toString(), "Tabuada", JOptionPane.INFORMATION_MESSAGE);
+    }
+}
+
+
